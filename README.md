@@ -825,5 +825,6 @@ Para problemas, dúvidas ou sugestões:
 
 [🏠 Home](#-uniadvisor---sistema-especialista-para-recomendação-de-matrícula) | [📖 Documentação](#-índice) | [🐛 Issues](https://github.com/seu-usuario/uniadvisor/issues) | [🤝 Contribute](#-contribuindo)
 
-</div>#   u n i a d v i s o r  
+</div>#   u n i a d v i s o r 
+ 
  
