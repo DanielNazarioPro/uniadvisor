@@ -102,7 +102,7 @@ O **UniAdvisor** é um sistema especialista que utiliza técnicas de Inteligênc
 
 ```bash
 # Se usar Git
-git clone https://github.com/seu-usuario/uniadvisor.git
+git clone https://github.com/DanielNazarioPro/uniadvisor.git
 cd uniadvisor
 
 # OU extrair o ZIP baixado
@@ -828,3 +828,4 @@ Para problemas, dúvidas ou sugestões:
 </div>#   u n i a d v i s o r 
  
  
+
