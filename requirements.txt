@@ -1,0 +1,13 @@
+flask>=2.3.0
+# Framework Web
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Banco de Dados
+# SQLite já vem com Python
+
+# Utilitários
+python-dateutil==2.8.2
+
+# Opcional (se precisar)
+# gunicorn==21.2.0  # Para produção

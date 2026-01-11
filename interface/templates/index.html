@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniAdvisor - Sistema Especialista de Matrícula | IFAM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="icon">🎓</span> UniAdvisor
+            </div>
+            <div class="subtitle">Sistema Baseado em Conhecimento - IFAM</div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- ETAPA 1: Identificação do Aluno -->
+        <section class="card" id="step-1">
+            <div class="card-header">
+                <h2>📝 Identificação do Aluno</h2>
+                <p>Preencha seus dados para iniciar a consulta</p>
+            </div>
+            
+            <form id="formAluno">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Ex: João da Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" id="matricula" placeholder="Ex: 2024001234" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo de Aluno</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="tipoAluno" value="novo" id="tipoNovo">
+                            <span class="radio-label">🆕 Aluno Novo (1º Ano)</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="tipoAluno" value="veterano" id="tipoVeterano" checked>
+                            <span class="radio-label">📚 Aluno Veterano</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="veteranoOptions">
+                    <div class="form-group">
+                        <label for="anoAtual">Ano Atual</label>
+                        <select id="anoAtual">
+                            <option value="1">1º Ano</option>
+                            <option value="2" selected>2º Ano</option>
+                            <option value="3">3º Ano</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btnContinuar">
+                    Continuar →
+                </button>
+            </form>
+        </section>
+
+        <!-- ETAPA 2: Histórico Escolar -->
+        <section class="card hidden" id="step-2">
+            <div class="card-header">
+                <h2>📊 Histórico Escolar</h2>
+                <p>Selecione as disciplinas que você já cursou</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" data-ano="1">1º Ano</button>
+                <button class="tab" data-ano="2">2º Ano</button>
+                <button class="tab" data-ano="3">3º Ano</button>
+            </div>
+
+            <div id="disciplinasContainer">
+                <!-- Preenchido via JavaScript -->
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" id="btnVoltar1">← Voltar</button>
+                <button class="btn btn-primary" id="btnConsultar">🔍 Gerar Recomendação</button>
+            </div>
+        </section>
+
+        <!-- ETAPA 3: Resultado da Inferência -->
+        <section class="card hidden" id="step-3">
+            <div class="card-header">
+                <h2>🎯 Plano de Matrícula Recomendado</h2>
+                <p id="mensagemResultado">Carregando...</p>
+            </div>
+
+            <!-- Estatísticas -->
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-card blue">
+                    <span class="stat-value" id="statAprovadas">0</span>
+                    <span class="stat-label">Aprovadas</span>
+                </div>
+                <div class="stat-card green">
+                    <span class="stat-value" id="statElegiveis">0</span>
+                    <span class="stat-label">Elegíveis</span>
+                </div>
+                <div class="stat-card red">
+                    <span class="stat-value" id="statBloqueadas">0</span>
+                    <span class="stat-label">Bloqueadas</span>
+                </div>
+                <div class="stat-card purple">
+                    <span class="stat-value" id="statProgresso">0%</span>
+                    <span class="stat-label">Progresso</span>
+                </div>
+            </div>
+
+            <!-- Disciplinas Sugeridas -->
+            <div class="result-section" id="secaoSugeridas">
+                <h3>⭐ Disciplinas Sugeridas (por prioridade)</h3>
+                <div id="listaSugeridas" class="discipline-list"></div>
+            </div>
+
+            <!-- Disciplinas Bloqueadas -->
+            <div class="result-section" id="secaoBloqueadas">
+                <h3>🚫 Disciplinas Bloqueadas</h3>
+                <div id="listaBloqueadas" class="discipline-list"></div>
+            </div>
+
+            <!-- Explicação do Sistema -->
+            <div class="result-section">
+                <h3>🧠 Raciocínio do Sistema</h3>
+                <div id="listaExplicacao" class="explanation-list"></div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" id="btnVoltar2">← Nova Consulta</button>
+                <button class="btn btn-success" id="btnConfirmar">✓ Confirmar Matrícula</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>UniAdvisor © 2024 - Trabalho de Conclusão de Curso | IFAM</p>
+        <p>Sistema Baseado em Conhecimento com Forward Chaining</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

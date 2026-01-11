@@ -1,0 +1,380 @@
+[
+  {
+    "id": "PORT1",
+    "nome": "Língua Portuguesa e Literatura Brasileira I",
+    "ano": 1,
+    "area": "Linguagens",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "ART1",
+    "nome": "Arte",
+    "ano": 1,
+    "area": "Linguagens",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "EDF1",
+    "nome": "Educação Física I",
+    "ano": 1,
+    "area": "Linguagens",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "MAT1",
+    "nome": "Matemática I",
+    "ano": 1,
+    "area": "Exatas",
+    "carga_horaria": 120,
+    "pre_requisitos": []
+  },
+  {
+    "id": "FIS1",
+    "nome": "Física I",
+    "ano": 1,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "QUI1",
+    "nome": "Química I",
+    "ano": 1,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "BIO1",
+    "nome": "Biologia I",
+    "ano": 1,
+    "area": "Biologicas",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "HIST1",
+    "nome": "História I",
+    "ano": 1,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "GEO1",
+    "nome": "Geografia I",
+    "ano": 1,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "FIL1",
+    "nome": "Filosofia I",
+    "ano": 1,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "SOC1",
+    "nome": "Sociologia I",
+    "ano": 1,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "DOC_TEC",
+    "nome": "Elaboração de Documentos Técnicos e Científicos",
+    "ano": 1,
+    "area": "Politecnico",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "LOGICA",
+    "nome": "Lógica de Programação e Estrutura de Dados",
+    "ano": 1,
+    "area": "Tecnica",
+    "carga_horaria": 120,
+    "pre_requisitos": []
+  },
+  {
+    "id": "HARDWARE",
+    "nome": "Montagem e Manutenção de Computadores",
+    "ano": 1,
+    "area": "Tecnica",
+    "carga_horaria": 80,
+    "pre_requisitos": []
+  },
+  {
+    "id": "REDES",
+    "nome": "Fundamentos de Redes de Computadores",
+    "ano": 1,
+    "area": "Tecnica",
+    "carga_horaria": 60,
+    "pre_requisitos": []
+  },
+  {
+    "id": "SO",
+    "nome": "Fundamentos de Sistemas Operacionais",
+    "ano": 1,
+    "area": "Tecnica",
+    "carga_horaria": 60,
+    "pre_requisitos": []
+  },
+
+  {
+    "id": "PORT2",
+    "nome": "Língua Portuguesa e Literatura Brasileira II",
+    "ano": 2,
+    "area": "Linguagens",
+    "carga_horaria": 80,
+    "pre_requisitos": ["PORT1"]
+  },
+  {
+    "id": "ING2",
+    "nome": "Inglês II",
+    "ano": 2,
+    "area": "Linguagens",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "EDF2",
+    "nome": "Educação Física II",
+    "ano": 2,
+    "area": "Linguagens",
+    "carga_horaria": 40,
+    "pre_requisitos": ["EDF1"]
+  },
+  {
+    "id": "MAT2",
+    "nome": "Matemática II",
+    "ano": 2,
+    "area": "Exatas",
+    "carga_horaria": 120,
+    "pre_requisitos": ["MAT1"]
+  },
+  {
+    "id": "FIS2",
+    "nome": "Física II",
+    "ano": 2,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["FIS1"]
+  },
+  {
+    "id": "QUI2",
+    "nome": "Química II",
+    "ano": 2,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["QUI1"]
+  },
+  {
+    "id": "BIO2",
+    "nome": "Biologia II",
+    "ano": 2,
+    "area": "Biologicas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["BIO1"]
+  },
+  {
+    "id": "HIST2",
+    "nome": "História II",
+    "ano": 2,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["HIST1"]
+  },
+  {
+    "id": "GEO2",
+    "nome": "Geografia II",
+    "ano": 2,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["GEO1"]
+  },
+  {
+    "id": "FIL2",
+    "nome": "Filosofia II",
+    "ano": 2,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": ["FIL1"]
+  },
+  {
+    "id": "SOC2",
+    "nome": "Sociologia II",
+    "ano": 2,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": ["SOC1"]
+  },
+  {
+    "id": "PI1",
+    "nome": "Projeto Integrador I",
+    "ano": 2,
+    "area": "Politecnico",
+    "carga_horaria": 80,
+    "pre_requisitos": ["DOC_TEC", "LOGICA"]
+  },
+  {
+    "id": "BD",
+    "nome": "Banco de Dados",
+    "ano": 2,
+    "area": "Tecnica",
+    "carga_horaria": 80,
+    "pre_requisitos": ["LOGICA"]
+  },
+  {
+    "id": "ANALISE",
+    "nome": "Introdução a Análise de Sistemas",
+    "ano": 2,
+    "area": "Tecnica",
+    "carga_horaria": 60,
+    "pre_requisitos": ["LOGICA"]
+  },
+  {
+    "id": "POO",
+    "nome": "Programação Orientada a Objetos",
+    "ano": 2,
+    "area": "Tecnica",
+    "carga_horaria": 100,
+    "pre_requisitos": ["LOGICA"]
+  },
+  {
+    "id": "IHC",
+    "nome": "Interação Homem-Computador",
+    "ano": 2,
+    "area": "Tecnica",
+    "carga_horaria": 40,
+    "pre_requisitos": ["LOGICA"]
+  },
+
+  {
+    "id": "PORT3",
+    "nome": "Língua Portuguesa e Literatura Brasileira III",
+    "ano": 3,
+    "area": "Linguagens",
+    "carga_horaria": 80,
+    "pre_requisitos": ["PORT2"]
+  },
+  {
+    "id": "EDF3",
+    "nome": "Educação Física III",
+    "ano": 3,
+    "area": "Linguagens",
+    "carga_horaria": 40,
+    "pre_requisitos": ["EDF2"]
+  },
+  {
+    "id": "MAT3",
+    "nome": "Matemática III",
+    "ano": 3,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["MAT2"]
+  },
+  {
+    "id": "FIS3",
+    "nome": "Física III",
+    "ano": 3,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["FIS2"]
+  },
+  {
+    "id": "QUI3",
+    "nome": "Química III",
+    "ano": 3,
+    "area": "Exatas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["QUI2"]
+  },
+  {
+    "id": "BIO3",
+    "nome": "Biologia III",
+    "ano": 3,
+    "area": "Biologicas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["BIO2"]
+  },
+  {
+    "id": "HIST3",
+    "nome": "História III",
+    "ano": 3,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["HIST2"]
+  },
+  {
+    "id": "GEO3",
+    "nome": "Geografia III",
+    "ano": 3,
+    "area": "Humanas",
+    "carga_horaria": 80,
+    "pre_requisitos": ["GEO2"]
+  },
+  {
+    "id": "FIL3",
+    "nome": "Filosofia III",
+    "ano": 3,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": ["FIL2"]
+  },
+  {
+    "id": "SOC3",
+    "nome": "Sociologia III",
+    "ano": 3,
+    "area": "Humanas",
+    "carga_horaria": 40,
+    "pre_requisitos": ["SOC2"]
+  },
+  {
+    "id": "PI2",
+    "nome": "Projeto Integrador II",
+    "ano": 3,
+    "area": "Politecnico",
+    "carga_horaria": 80,
+    "pre_requisitos": ["PI1"]
+  },
+  {
+    "id": "MEIO_AMB",
+    "nome": "Meio Ambiente, Saúde e Segurança",
+    "ano": 3,
+    "area": "Tecnica",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "EMPREEND",
+    "nome": "Empreendedorismo, Relações Interpessoais e Ética",
+    "ano": 3,
+    "area": "Tecnica",
+    "carga_horaria": 40,
+    "pre_requisitos": []
+  },
+  {
+    "id": "MOBILE",
+    "nome": "Programação para Dispositivos Móveis",
+    "ano": 3,
+    "area": "Tecnica",
+    "carga_horaria": 80,
+    "pre_requisitos": ["POO", "BD"]
+  },
+  {
+    "id": "WEB",
+    "nome": "Programação Web",
+    "ano": 3,
+    "area": "Tecnica",
+    "carga_horaria": 100,
+    "pre_requisitos": ["POO", "BD", "IHC"]
+  }
+]

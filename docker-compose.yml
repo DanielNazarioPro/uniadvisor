@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  uniadvisor:
+    build: .
+    container_name: uniadvisor_app
+    ports:
+      - "5000:5000"
+    volumes:
+      # Persistir banco de dados
+      - ./data:/app/data
+      - ./uniadvisor.db:/app/uniadvisor.db
+    environment:
+      - FLASK_APP=main.py
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - uniadvisor_network
+
+networks:
+  uniadvisor_network:
+    driver: bridge
