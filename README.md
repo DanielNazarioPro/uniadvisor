@@ -754,9 +754,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - 🎓 Universidade do Estado do Amazonas (UEA)
 - 📚 Sistemas de Informação - 6º Semestre
 - 📅 Janeiro 2025
-- 📧 [seu-email@exemplo.com]
-- 🔗 [GitHub](https://github.com/seu-usuario)
-- 💼 [LinkedIn](https://linkedin.com/in/seu-perfil)
+- 🔗 [GitHub]([https://github.com/DanielNazarioPro](https://github.com/DanielNazarioPro/uniadvisor))
 
 ---
 
@@ -777,55 +775,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 4. Docker Documentation: https://docs.docker.com/
 
 ---
-
-## 📞 Suporte
-
-Para problemas, dúvidas ou sugestões:
-
-1. 📖 Consulte a seção [Troubleshooting](#troubleshooting)
-2. 🔍 Veja os arquivos de diagnóstico:
-   - `diagnostico_historico.py`
-   - `SOLUCAO_DEFINITIVA_HISTORICO.md`
-3. 🐛 Abra uma [Issue no GitHub](https://github.com/DanielNazarioPro/uniadvisor.git)
-4. 📧 Entre em contato: [dnods.snf22@uea.edu.br]
-
----
-
-## 🎯 Status do Projeto
-
-✅ **Versão Atual:** 1.0.0  
-✅ **Status:** Concluído e Funcional  
-✅ **Última Atualização:** Janeiro 2025
-
-### Funcionalidades Implementadas:
-- [x] Motor de inferência Forward Chaining
-- [x] Base de conhecimento com 45 disciplinas
-- [x] Interface web responsiva
-- [x] Persistência em SQLite
-- [x] Busca rápida de alunos
-- [x] API REST completa
-- [x] Containerização Docker
-- [x] Logs de auditoria
-
-### Próximas Melhorias (Roadmap):
-- [ ] Autenticação de usuários
-- [ ] Dashboard para coordenadores
-- [ ] Exportação de relatórios PDF
-- [ ] Integração com sistema acadêmico oficial
-- [ ] Notificações por email
-- [ ] Modo offline (PWA)
-
----
-
-<div align="center">
-
-**Desenvolvido com ❤️ para o IFAM**
-
-⭐ Se este projeto te ajudou, considere dar uma estrela!
-
-[🏠 Home](#-uniadvisor---sistema-especialista-para-recomendação-de-matrícula) | [📖 Documentação](#-índice) | [🐛 Issues](https://github.com/seu-usuario/uniadvisor/issues) | [🤝 Contribute](#-contribuindo)
-
-</div>#   u n i a d v i s o r 
- 
- 
-
