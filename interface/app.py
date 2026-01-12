@@ -114,7 +114,7 @@ def consultar():
     )
 
     # 2. Limpar histórico anterior (se for uma nova consulta)
-    HistoricoRepository.limpar_historico(aluno_id)
+   # HistoricoRepository.limpar_historico(aluno_id)
 
     # 3. Salvar histórico no banco
     if not eh_novo:
